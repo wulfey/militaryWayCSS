@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import COLORS from './Colors';
+import { defaultFont, COLORS } from './CommonStyle';
 
-const PDF_WIDTH = 1394;
-const PDF_HEIGHT = 1973;
+export const PDF_WIDTH = 1394;
+export const PDF_HEIGHT = 1973.2;
 
 const layoutStyle = {
+  ...defaultFont,
   display        : 'flex',
   flexDirection  : 'column',
   justifyContent : 'flex-start',
@@ -12,9 +13,6 @@ const layoutStyle = {
   width          : PDF_WIDTH,
   height         : PDF_HEIGHT,
   backgroundColor: COLORS.LIGHT_LABEL,
-  borderWidth    : 1,
-  borderColor    : COLORS.ERROR_RED,
-  borderStyle    : 'solid',
 };
 
 
