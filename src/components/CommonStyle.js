@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const COLORS = {
   ALMOST_WHITE             : '#DEEBFA',
   BLACKISH                 : '#1A173B',
@@ -39,6 +41,12 @@ export const COLORS = {
   JOBS_TEAL                : '#3FEBFF',
   TEAL                     : '#6B94A6',
 };
+
+export function Spacer({height = 10}){
+  return (<div style={{width: "100%", height}}/>)
+}
+
+export const BLT = ' • ';
 
 export const centerColumn = {
   display: 'flex',

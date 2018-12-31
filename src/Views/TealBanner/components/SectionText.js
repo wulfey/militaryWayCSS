@@ -6,11 +6,13 @@ const container = {
   ...defaultFont,
   width: "100%",
   lineHeight: 30 / 25,
-  textAlign: 'left',
+  textAlign: 'justify',
   fontSize: 25,
   letterSpacing: 0.5,
   fontWeight: FONT_WEIGHTS.light,
   color: COLORS.FONT,
+  marginTop: 10,
+  marginBottom: 10,
 };
 
 export default class SectionText extends Component {

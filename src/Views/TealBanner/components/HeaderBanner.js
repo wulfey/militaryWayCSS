@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { PDF_HEIGHT } from '../../../components/Layout';
-import { defaultFont, FONT_WEIGHTS, centerColumn, COLORS } from '../../../components/CommonStyle';
+import { BLT, defaultFont, FONT_WEIGHTS, centerColumn, COLORS } from '../../../components/CommonStyle';
 
 
 const container = {
@@ -31,7 +31,6 @@ const contactStyle = {
   fontWeight   : FONT_WEIGHTS.thin,
 };
 
-const BLT = ' • ';
 
 export default class HeaderBanner extends Component {
   render() {
