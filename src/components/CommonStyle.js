@@ -49,17 +49,19 @@ export const centerColumn = {
 };
 
 export const defaultFont = {
-  fontFamily: 'Lato',
+  fontFamily: 'Mukta Mahee',
   fontWeight: 400,
   fontSize: 14,
   letterSpacing: 0.09,
   color: COLORS.FONT,
 };
 
-export const LATO_WEIGHTS = {
-  thin: 100,
+export const FONT_WEIGHTS = {
+  thin: 200,
   light: 300,
   regular: 400,
+  medium: 500,
+  semiBold: 600,
   bold: 700,
-  black: 900,
+  black: 800,
 };

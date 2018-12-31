@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import { defaultFont, LATO_WEIGHTS, COLORS } from './CommonStyle';
+import { defaultFont, FONT_WEIGHTS, COLORS } from './CommonStyle';
 
 export default function LinkButton({
   text = 'LEARN MORE',
@@ -33,7 +33,7 @@ export default function LinkButton({
       textAlign: 'center',
       alignItems: 'center',
       justifyContent: 'center',
-      fontWeight: LATO_WEIGHTS.light,
+      fontWeight: FONT_WEIGHTS.light,
       height: HEIGHT,
       borderRadius: HEIGHT,
       minWidth: WIDTH,

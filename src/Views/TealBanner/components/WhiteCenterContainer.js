@@ -1,27 +1,29 @@
 import React, { Component } from 'react';
-import CONTACT_INFO from '../../../data/contactInfo';
-import { defaultFont, LATO_WEIGHTS, centerColumn, COLORS } from '../../../components/CommonStyle';
+import { PDF_HEIGHT } from '../../../components/Layout';
+import { defaultFont, FONT_WEIGHTS, centerColumn, COLORS } from '../../../components/CommonStyle';
 
 import LeftColumn from './LeftColumn';
+import CenterColumn from './CenterColumn';
 import RightColumn from './RightColumn';
 
 const container = {
   display        : 'flex',
-  alignItems     : 'center',
-  flexDirection  : 'column',
-  justifyContent : 'center',
+  alignItems     : 'flex-start',
+  flexDirection  : 'row',
+  justifyContent : 'space-between',
   width          : '100%',
-  height         : '86%',
+  height         : PDF_HEIGHT * (86 / 100),
   backgroundColor: COLORS.WHITE,
-  position: 'relative',
 };
+
 
 export default class WhiteCenterContainer extends Component {
   render() {
     return (
       <div style={container}>
-        <LeftColumn />
-        <RightColumn />
+        <LeftColumn data={this.props.data}/>
+        <CenterColumn />
+        <RightColumn data={this.props.data}/>
       </div>
     );
   }

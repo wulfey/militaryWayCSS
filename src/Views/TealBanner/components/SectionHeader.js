@@ -5,15 +5,16 @@ import { defaultFont, FONT_WEIGHTS, centerColumn, COLORS } from '../../../compon
 const container = {
   ...defaultFont,
   width: "100%",
-  lineHeight: 30 / 25,
+  height: 80,
+  lineHeight: 80 / 40,
   textAlign: 'left',
-  fontSize: 25,
-  letterSpacing: 0.5,
-  fontWeight: FONT_WEIGHTS.light,
+  fontSize: 40,
+  letterSpacing: 1.5,
+  fontWeight: FONT_WEIGHTS.medium,
   color: COLORS.FONT,
 };
 
-export default class SectionText extends Component {
+export default class SectionHeader extends Component {
   render() {
     return (
       <div style={container}>

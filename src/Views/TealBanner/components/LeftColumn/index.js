@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
-import CONTACT_INFO from '../../../data/contactInfo';
-import { defaultFont, LATO_WEIGHTS, centerColumn, COLORS } from '../../../components/CommonStyle';
+import SectionHeader from '../SectionHeader';
+import SectionText from '../SectionText';
+import { defaultFont, FONT_WEIGHTS, centerColumn, COLORS } from '../../../../components/CommonStyle';
 
 const container = {
   display       : 'flex',
   alignItems    : 'flex-start',
   flexDirection : 'column',
   justifyContent: 'flex-start',
-  width         : '45%',
-  height        : '100%',
-  position      : 'absolute',
-  top           : 0,
-  left          : 0,
+  width         : '46%',
+  padding       : 20,
 };
 
 export default class LeftColumn extends Component {
   render() {
+    const { summary, education } = this.props.data;
     return (
       <div style={container}>
-        <div>PROFESIONAL PROFILOE</div>
-        <div>many text</div>
-        <div>EDUMCATION</div>
+        <SectionHeader >PROFESSIONAL PROFILE</SectionHeader>
+        <SectionText>{summary}</SectionText>
+        <SectionHeader >EDUCATION</SectionHeader>
         <div>many text</div>
         <div>many text</div>
         <div>COOL LINKS AND ICONS</div>
