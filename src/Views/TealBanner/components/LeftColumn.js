@@ -3,12 +3,15 @@ import CONTACT_INFO from '../../../data/contactInfo';
 import { defaultFont, LATO_WEIGHTS, centerColumn, COLORS } from '../../../components/CommonStyle';
 
 const container = {
-  display        : 'flex',
-  alignItems     : 'flex-start',
-  flexDirection  : 'column',
-  justifyContent :  'flex-start',
-  width          : '45%',
-  height         : '100%',
+  display       : 'flex',
+  alignItems    : 'flex-start',
+  flexDirection : 'column',
+  justifyContent: 'flex-start',
+  width         : '45%',
+  height        : '100%',
+  position      : 'absolute',
+  top           : 0,
+  left          : 0,
 };
 
 export default class LeftColumn extends Component {
