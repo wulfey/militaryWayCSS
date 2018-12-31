@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import CONTACT_INFO from '../../../data/contactInfo';
+import getContactInfo from '../../../data/contactInfo';
 import { defaultFont, LATO_WEIGHTS, centerColumn, COLORS } from '../../../components/CommonStyle';
 
-const { name, phone, address, email } = CONTACT_INFO;
+
 const container = {
   display        : 'flex',
   alignItems     : 'center',
@@ -35,6 +35,8 @@ const BLT = ' • ';
 
 export default class HeaderBanner extends Component {
   render() {
+    const { paramName } = this.props;
+    const { name, phone, address, email } = getContactInfo(paramName);
     return (
       <div style={container}>
         <div style={nameStyle}>{name.toUpperCase()}</div>

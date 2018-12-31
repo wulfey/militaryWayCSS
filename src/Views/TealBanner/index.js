@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
 import HeaderBanner from './components/HeaderBanner';
 import WhiteCenterContainer from './components/WhiteCenterContainer';
 
@@ -15,9 +16,11 @@ const container = {
 
 export default class TealBanner extends Component {
   render() {
+    const name = _.get(this.props, 'match.params.name') || 'Jason';
+
     return (
       <div style={container}>
-        <HeaderBanner />
+        <HeaderBanner paramName={name}/>
         <WhiteCenterContainer />
         <FooterBanner />
       </div>

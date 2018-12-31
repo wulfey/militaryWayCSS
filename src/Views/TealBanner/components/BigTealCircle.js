@@ -8,10 +8,10 @@ const container = {
   width          : DIM,
   height         : DIM,
   backgroundColor: COLORS.TEAL,
-  borderWidth: 1,
-  borderStyle: 'solid',
-  borderColor: COLORS.TEAL,
-  borderRadius: DIM,
+  borderWidth    : 1,
+  borderStyle    : 'solid',
+  borderColor    : COLORS.TEAL,
+  borderRadius   : DIM,
 };
 export default class BigTealCircle extends Component {
   render() {

@@ -5,8 +5,8 @@ import {
   Switch,
 } from 'react-router-dom';
 import React from 'react';
-import Landing from './Landing';
-import TealBanner from './TealBanner';
+import LandingRouter from './Landing';
+import TealBannerRouter from './TealBanner';
 
 const landingUri = '/';
 const tealBannerUri = '/TealBanner';
@@ -15,8 +15,8 @@ function Router() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path={tealBannerUri} component={TealBanner} />
-        <Route exact path={landingUri} component={Landing} />
+        <Route path={tealBannerUri} component={TealBannerRouter} />
+        <Route exact path={landingUri} component={LandingRouter} />
         <Redirect to="/" />
       </Switch>
     </BrowserRouter>
