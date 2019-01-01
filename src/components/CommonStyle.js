@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const COLORS = {
   ALMOST_WHITE             : '#DEEBFA',
   BLACKISH                 : '#1A173B',
@@ -40,6 +42,12 @@ export const COLORS = {
   TEAL                     : '#6B94A6',
 };
 
+export function Spacer({height = 10}){
+  return (<div style={{width: "100%", height}}/>)
+}
+
+export const BLT = ' • ';
+
 export const centerColumn = {
   display: 'flex',
   alignItems: 'center',
@@ -49,17 +57,19 @@ export const centerColumn = {
 };
 
 export const defaultFont = {
-  fontFamily: 'Lato',
+  fontFamily: 'Mukta Mahee',
   fontWeight: 400,
   fontSize: 14,
   letterSpacing: 0.09,
   color: COLORS.FONT,
 };
 
-export const LATO_WEIGHTS = {
-  thin: 100,
+export const FONT_WEIGHTS = {
+  thin: 200,
   light: 300,
   regular: 400,
+  medium: 500,
+  semiBold: 600,
   bold: 700,
-  black: 900,
+  black: 800,
 };

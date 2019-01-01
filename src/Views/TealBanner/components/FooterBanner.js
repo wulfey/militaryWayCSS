@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import CONTACT_INFO from '../../../data/contactInfo';
-import { defaultFont, LATO_WEIGHTS, centerColumn, COLORS } from '../../../components/CommonStyle';
 
-const { name, phone, address, email } = CONTACT_INFO;
+import { defaultFont, FONT_WEIGHTS, centerColumn, COLORS } from '../../../components/CommonStyle';
+
 const container = {
   display        : 'flex',
   alignItems     : 'center',

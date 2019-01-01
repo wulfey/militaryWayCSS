@@ -9,7 +9,7 @@ export default function TealBannerRouter() {
   return (
     <Layout>
       <Switch>
-        <Route path={'/'} component={TealBanner} />
+        <Route  path="/TealBanner/:name"  component={TealBanner} />
       </Switch>
     </Layout>
   )
