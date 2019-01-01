@@ -31,11 +31,11 @@ const JASON = {
       ],
     },
     {
-      title          : 'Software Patent Attorney',
-      company        : 'KPPB LLP and Adeli LLP',
-      description    : 'Prepared hundreds of software flowcharts and state diagrams for startups, corporations, and universities.  Prepared and prosecuted patents in the fields of: ',
-      end            : '11-2016',
-      start          : '08-2010',
+      title      : 'Software Patent Attorney',
+      company    : 'KPPB LLP and Adeli LLP',
+      description: 'Prepared hundreds of software flowcharts and state diagrams for startups, corporations, and universities.  Prepared and prosecuted patents in the fields of: ',
+      end        : '11-2016',
+      start      : '08-2010',
       sideBullets: [
         {
           left : 'Virtualized networks',
@@ -67,7 +67,16 @@ const JASON = {
         'Sat as a Computer Scientist for the Patent Bar'
       ],
     },
-  ]
+  ],
+  skills     : [
+    { string: 'ReactJS', rating: 6 },
+    { string: 'JSX / CSS', rating: 6 },
+    { string: 'Node', rating: 5 },
+    { string: 'Javascript', rating: 4 },
+    { string: 'React Native', rating: 4 },
+    { string: 'Ruby', rating: 3 },
+    { string: 'C++', rating: 3 },
+  ],
 };
 
 export default JASON;
