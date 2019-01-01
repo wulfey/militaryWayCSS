@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import GradientDiv from '../../../components/GradientDiv';
 import { defaultFont, FONT_WEIGHTS, centerColumn, COLORS } from '../../../components/CommonStyle';
 
 const container = {
@@ -8,14 +8,16 @@ const container = {
   flexDirection  : 'column',
   justifyContent : 'flex-start',
   width          : '100%',
-  height         : '4%',
-  backgroundColor: COLORS.TEAL,
+  height         : '10%',
+  backgroundColor: COLORS.TRUE_BLUE,
 };
 
 export default class FooterBanner extends Component {
   render() {
     return (
-      <div style={container}/>
+      <div style={container}>
+        <GradientDiv angle={'-75deg'} colors={[COLORS.TRUE_BLUE, COLORS.TRUE_BLUE_DARK]}/>
+      </div>
     );
   }
 }

@@ -20,16 +20,6 @@ export default class RightColumn extends Component {
       <div style={container}>
         <SectionHeader >ENGINEER EXPERIENCE</SectionHeader>
         {experiences.map(experience => <ExperienceBlock data={experience}/>)}
-        <div>many text</div>
-        <div>many text</div>
-        <div>COOL LINKS AND ICONS</div>
-        <div>many text</div>
-        <div>many text</div>
-        <div>many text</div>
-        <div>SKILLZ FOR BILLZ</div>
-        <div>many text</div>
-        <div>many text</div>
-        <div>many text</div>
       </div>
     );
   }

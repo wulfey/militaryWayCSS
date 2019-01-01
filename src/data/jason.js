@@ -59,7 +59,7 @@ const JASON = {
       ],
     },
     {
-      school : 'UCLA',
+      school: 'UCLA',
       degree : 'B.S. in Cybernetics, 2006',
       bullets: [
         'GPA 3.28/4.00',
@@ -71,8 +71,10 @@ const JASON = {
   skills     : [
     { string: 'ReactJS', rating: 6 },
     { string: 'JSX / CSS', rating: 6 },
-    { string: 'Node', rating: 5 },
-    { string: 'Javascript', rating: 4 },
+    { string: 'Redux Form', rating: 6 },
+    { string: 'Redux', rating: 5 },
+    { string: 'JavaScript', rating: 5 },
+    { string: 'Node', rating: 4 },
     { string: 'React Native', rating: 4 },
     { string: 'Ruby', rating: 3 },
     { string: 'C++', rating: 3 },

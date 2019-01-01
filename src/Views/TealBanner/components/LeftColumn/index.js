@@ -3,8 +3,7 @@ import SectionHeader from '../SectionHeader';
 import SectionText from '../SectionText';
 import DegreeBlock from './DegreeBlock';
 import TechnicalSkills from './TechnicalSkills';
-
-import { defaultFont, FONT_WEIGHTS, centerColumn, COLORS } from '../../../../components/CommonStyle';
+import Interests from './Interests';
 
 const container = {
   display       : 'flex',
@@ -26,8 +25,8 @@ export default class LeftColumn extends Component {
         {degrees.map(degree => <DegreeBlock data={degree} />)}
         <SectionHeader>TECHNICAL SKILLS</SectionHeader>
         <TechnicalSkills data={skills} />
-        
-
+        <SectionHeader>INTERESTS</SectionHeader>
+        <Interests />
       </div>
     );
   }

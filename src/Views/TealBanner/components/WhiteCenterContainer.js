@@ -12,7 +12,7 @@ const container = {
   flexDirection  : 'row',
   justifyContent : 'space-between',
   width          : '100%',
-  height         : PDF_HEIGHT * (86 / 100),
+  height         : PDF_HEIGHT * (80 / 100),
   backgroundColor: COLORS.WHITE,
 };
 

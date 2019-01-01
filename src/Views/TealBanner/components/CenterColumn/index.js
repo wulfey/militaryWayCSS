@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { defaultFont, FONT_WEIGHTS, centerColumn, COLORS } from '../../../../components/CommonStyle';
 import BigTealCircle from './BigTealCircle';
 import TinyCircle from './TinyCircle';
 import SmallTealCircle from './SmallTealCircle';
