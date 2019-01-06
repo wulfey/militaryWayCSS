@@ -8,7 +8,7 @@ const container = {
   flexDirection  : 'column',
   justifyContent : 'flex-start',
   width          : '100%',
-  height         : '10%',
+  height         : '7%',
   backgroundColor: COLORS.TRUE_BLUE,
 };
 

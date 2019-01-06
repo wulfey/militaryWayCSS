@@ -16,16 +16,16 @@ const container = {
   marginBottom: 8,
 };
 const innerCircle = {
-  width          : DIM * (5 / 8),
-  height         : DIM * (5 / 8),
+  width          : DIM * (4 / 8),
+  height         : DIM * (4 / 8),
   backgroundColor: COLORS.TRUE_BLUE,
   borderWidth    : 1,
   borderStyle    : 'solid',
   borderColor    : COLORS.TRUE_BLUE,
   borderRadius   : DIM,
   position       : 'absolute',
-  left           : DIM * (3 / 16) - 1,
-  top            : DIM * (3 / 16) - 1,
+  left           : DIM * (4 / 16) - 1,
+  top            : DIM * (4 / 16) - 1,
 };
 
 export default class SmallTealCircle extends Component {

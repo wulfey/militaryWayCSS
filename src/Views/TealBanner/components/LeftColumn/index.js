@@ -4,6 +4,8 @@ import SectionText from '../SectionText';
 import DegreeBlock from './DegreeBlock';
 import TechnicalSkills from './TechnicalSkills';
 import Interests from './Interests';
+import LinkedIn from './LinkedIn';
+import { Spacer, defaultFont, FONT_WEIGHTS, centerColumn, COLORS } from '../../../../components/CommonStyle';
 
 const container = {
   display       : 'flex',
@@ -12,6 +14,8 @@ const container = {
   justifyContent: 'flex-start',
   width         : '46%',
   padding       : 40,
+  height: "100%",
+  position: 'relative',
 };
 
 export default class LeftColumn extends Component {
@@ -21,12 +25,15 @@ export default class LeftColumn extends Component {
       <div style={container}>
         <SectionHeader>PROFESSIONAL PROFILE</SectionHeader>
         <SectionText>{summary}</SectionText>
-        <SectionHeader>EDUCATION</SectionHeader>
-        {degrees.map(degree => <DegreeBlock data={degree} />)}
         <SectionHeader>TECHNICAL SKILLS</SectionHeader>
         <TechnicalSkills data={skills} />
+        <SectionHeader>EDUCATION</SectionHeader>
+        {degrees.map(degree => <DegreeBlock data={degree} />)}
         <SectionHeader>INTERESTS</SectionHeader>
         <Interests />
+        <Spacer height={50}/>
+        <LinkedIn/>
+
       </div>
     );
   }
