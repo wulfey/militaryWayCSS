@@ -17,8 +17,8 @@ const linkText = {
   width: "100%",
   lineHeight: 30 / 25,
   textAlign: 'justify',
-  fontSize: 25,
-  letterSpacing: 0.5,
+  fontSize: 20,
+  letterSpacing: 0.2,
   fontWeight: FONT_WEIGHTS.light,
   color: COLORS.FONT,
   marginTop: 10,
@@ -28,14 +28,14 @@ const linkText = {
 };
 
 const linkedIn2 = 'https://www.linkedin.com/in/jason-wolfe-44148a69/';
-const linkedIn = '/jason-wolfe-44148a69/';
+const linkedIn = 'https://www.linkedin.com/in/jason-wolfe-react/';
 
 export default class LinkedIn extends Component {
   render() {
     return (
       <div style={iconRow}>
         <BlueLinkedIn />
-        <div style={linkText}>{linkedIn}</div>
+        <div style={linkText}>{linkedIn2}</div>
       </div>
     );
   }
