@@ -3,7 +3,7 @@ const JASON = {
   phone      : '(310) 562 - 0755',
   address    : '562 Military Way, Palo Alto, CA',
   email      : 'JasonWolfe@gmail.com',
-  summary    : 'Ambitious software engineer looking for full stack work in an aggressive environment. After 6 years writing software patents, I taught myself to code on unemployment and have risen to be the second best developer at my current employer. Our CTO has recently left the company and I am striking out to find a workplace where I can keep rising.',
+  summary    : 'Ambitious software engineer looking for full stack work in an aggressive environment. After 6 years writing software patents, I taught myself to code on unemployment and have risen to be the second best developer at my current employer. I am looking for more full stack challenges where I can continue rising. https://github.com/wulfey',
   experiences: [
     {
       title      : 'Software Engineer',
@@ -20,7 +20,7 @@ const JASON = {
     },
     {
       title      : 'Independent Developer',
-      company    : 'Unemployment Checks',
+      company    : 'And Contract Patent Drafter',
       description: 'Taught myself React, React-Native, ES6, C++, Java, JavaScript, and Ruby on Rails. Developer several solo projects including:',
       start      : '11-2016',
       end        : '11-2017',
@@ -59,7 +59,7 @@ const JASON = {
       ],
     },
     {
-      school : 'UCLA',
+      school: 'UCLA',
       degree : 'B.S. in Cybernetics, 2006',
       bullets: [
         'GPA 3.28/4.00',
@@ -71,8 +71,10 @@ const JASON = {
   skills     : [
     { string: 'ReactJS', rating: 6 },
     { string: 'JSX / CSS', rating: 6 },
-    { string: 'Node', rating: 5 },
-    { string: 'Javascript', rating: 4 },
+    { string: 'Redux Form', rating: 6 },
+    { string: 'Redux', rating: 5 },
+    { string: 'JavaScript', rating: 5 },
+    { string: 'Node', rating: 4 },
     { string: 'React Native', rating: 4 },
     { string: 'Ruby', rating: 3 },
     { string: 'C++', rating: 3 },

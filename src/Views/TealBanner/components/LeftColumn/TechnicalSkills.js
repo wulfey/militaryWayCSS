@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import SectionHeader from '../SectionHeader';
-import SectionText from '../SectionText';
-import { BLT, defaultFont, FONT_WEIGHTS, centerColumn, COLORS } from '../../../../components/CommonStyle';
+import { FONT_WEIGHTS, COLORS } from '../../../../components/CommonStyle';
 
 
 const container = {
@@ -36,10 +34,10 @@ const ratingContainer = {
 const filledBoxStyle = {
   height         : 24,
   width          : 24,
-  backgroundColor: COLORS.TEAL,
+  backgroundColor: COLORS.TRUE_BLUE,
   borderStyle    : 'solid',
   borderWidth    : 1,
-  borderColor    : COLORS.TEAL,
+  borderColor    : COLORS.TRUE_BLUE,
   margin: 5,
 };
 const FilledBox = () => <div style={filledBoxStyle} />;

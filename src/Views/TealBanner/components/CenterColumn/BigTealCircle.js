@@ -6,10 +6,10 @@ const DIM = 35;
 const container = {
   width          : DIM,
   height         : DIM,
-  backgroundColor: COLORS.TEAL,
+  backgroundColor: COLORS.TRUE_BLUE,
   borderWidth    : 1,
   borderStyle    : 'solid',
-  borderColor    : COLORS.TEAL,
+  borderColor    : COLORS.TRUE_BLUE,
   borderRadius   : DIM,
   position       : 'relative',
   marginTop: 8,

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import SectionHeader from '../SectionHeader';
-import SectionText from '../SectionText';
-import { BLT, defaultFont, FONT_WEIGHTS, centerColumn, COLORS } from '../../../../components/CommonStyle';
+import { FONT_WEIGHTS } from '../../../../components/CommonStyle';
 
 const schoolRow = {
   display       : 'flex',
