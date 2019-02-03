@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { PDF_HEIGHT } from '../../../components/Layout';
-import { BLT, defaultFont, FONT_WEIGHTS, centerColumn, COLORS } from '../../../components/CommonStyle';
+import { BLT, FONT_WEIGHTS, centerColumn, COLORS } from '../../../components/CommonStyle';
+import GradientDiv from '../../../components/GradientDiv';
 
 
 const container = {
@@ -10,7 +11,6 @@ const container = {
   justifyContent : 'flex-start',
   width          : '100%',
   height         : PDF_HEIGHT / 10,
-  backgroundColor: COLORS.TEAL,
 };
 const nameStyle = {
   ...centerColumn,
@@ -24,21 +24,22 @@ const nameStyle = {
 const contactStyle = {
   ...nameStyle,
   letterSpacing: 0.3,
-  fontSize     : 24,
+  fontSize     : 32,
   height       : '30%',
   width        : '100%',
   textAlign    : 'center',
   fontWeight   : FONT_WEIGHTS.thin,
 };
 
-
 export default class HeaderBanner extends Component {
   render() {
-    const { name, phone, address, email } = this.props.data
+    const { name, phone, address, email } = this.props.data;
     return (
       <div style={container}>
-        <div style={nameStyle}>{name.toUpperCase()}</div>
-        <div style={contactStyle}>{`${phone}${BLT}${address}${BLT}${email}`}</div>
+        <GradientDiv angle={'75deg'} colors={[COLORS.TRUE_BLUE, COLORS.TRUE_BLUE_DARK]}>
+          <div style={nameStyle}>{name.toUpperCase()}</div>
+          <div style={contactStyle}>{`${phone}${BLT}${address}${BLT}${email}`}</div>
+        </GradientDiv>
       </div>
     );
   }

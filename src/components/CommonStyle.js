@@ -12,7 +12,6 @@ export const COLORS = {
   LINE_SEPERATOR           : '#E6EAEE',
   OLD_FONT                 : '#B4BAC6',
   BOLD_TEXT                : '#3B3B3B',
-  FONT                     : '#4C4C4C',
   LABEL_FONT               : '#6E6E6E',
   LIGHT_LABEL              : '#AAA',
   DARKER_LABEL_FONT        : '#5D5D5D',
@@ -21,7 +20,6 @@ export const COLORS = {
   FORM_BACKGROUND          : '#FAFBFC',
   NAVIGATION_ICON          : '#C0C5D2',
   ERROR_RED                : '#F44336',
-  WHITE                    : '#FFFFFF',
   LIGHT_BORDER             : '#EBEDF8',
   CHARCOAL_TEXT            : '#4C4C4C',
   GREEN                    : '#7ED321',
@@ -40,36 +38,41 @@ export const COLORS = {
   LOGO_LIGHT               : '#FFF',
   JOBS_TEAL                : '#3FEBFF',
   TEAL                     : '#6B94A6',
+
+  WHITE                    : '#FFFFFF',
+  FONT                     : '#4C4C4C',
+  TRUE_BLUE                : '#1129A3',
+  TRUE_BLUE_DARK           : '#030554',
 };
 
-export function Spacer({height = 10}){
-  return (<div style={{width: "100%", height}}/>)
+export function Spacer({ height = 10 }) {
+  return (<div style={{ width: '100%', height }} />);
 }
 
 export const BLT = ' • ';
 
 export const centerColumn = {
-  display: 'flex',
-  alignItems: 'center',
-  flexDirection: 'column',
+  display       : 'flex',
+  alignItems    : 'center',
+  flexDirection : 'column',
   justifyContent: 'center',
-  width: '100%',
+  width         : '100%',
 };
 
 export const defaultFont = {
-  fontFamily: 'Mukta Mahee',
-  fontWeight: 400,
-  fontSize: 14,
+  fontFamily   : 'Mukta Mahee',
+  fontWeight   : 400,
+  fontSize     : 14,
   letterSpacing: 0.09,
-  color: COLORS.FONT,
+  color        : COLORS.FONT,
 };
 
 export const FONT_WEIGHTS = {
-  thin: 200,
-  light: 300,
-  regular: 400,
-  medium: 500,
+  thin    : 200,
+  light   : 300,
+  regular : 400,
+  medium  : 500,
   semiBold: 600,
-  bold: 700,
-  black: 800,
+  bold    : 700,
+  black   : 800,
 };
